@@ -160,4 +160,113 @@ body {
 
 .main {
     background-color: #e2e8f0;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.main h2 {
+    margin: 0 0 16px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Project cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background-color: white;
+    border-left: 8px solid #f0b429;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.4;
+}
+
+.card-actions {
+    margin-top: auto;
+    padding-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    font-size: 24px;
+}
+
+/* Announcements and trending */
+.side {
+    display: grid;
+    gap: 32px;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.announcement {
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement h3 {
+    margin: 0 0 4px;
+    font-size: 15px;
+}
+
+.announcement p {
+    margin: 0;
+    font-size: 13px;
+    color: #4b5563;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+}
+
+.trend p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.trend-user {
+    font-weight: bold;
+}
+
+.avatar-blue {
+    background-color: #bae6fd;
+}
+
+.avatar-gray {
+    background-color: #9ca3af;
+}
+
+.avatar-pink {
+    background-color: #f9a8d4;
 }
